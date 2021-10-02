@@ -1,0 +1,13 @@
+{
+  "materials": [
+    { "id": 1, "name": "cement", "amount": 5, "cost": 15, "age": 18 },
+    { "id": 2, "name": "wood 5mtrs", "amount": 3, "cost": 12, "age": 15 },
+    { "id": 3, "name": "wood 5mtrs", "amount": 3, "cost": 12, "age": 15 },
+    { "id": 4, "name": "wood 5mtrs", "amount": 3, "cost": 12, "age": 15 }
+  ],
+  "projects": [
+    { "id":  1, "name": "Garden Remodeling", "description":  "Change of grass for the garden", "duration": "2 dias" },
+    { "id":  2, "name": "Kitchen ", "description":  "Construction of kitchen", "duration": "5 dias" }
+  ]
+
+}
