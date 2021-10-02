@@ -1,9 +1,9 @@
 {
   "materials": [
-    { "id": 1, "name": "cement", "amount": 5, "cost": 15, "age": 18 },
-    { "id": 2, "name": "wood 5mtrs", "amount": 3, "cost": 12, "age": 15 },
-    { "id": 3, "name": "wood 5mtrs", "amount": 3, "cost": 12, "age": 15 },
-    { "id": 4, "name": "wood 5mtrs", "amount": 3, "cost": 12, "age": 15 }
+    { "id": 1, "name": "cement in kg", "amount": 5, "cost": 15, "age": 18 },
+    { "id": 2, "name": "tie wire in meters", "amount": 3, "cost": 12, "age": 15 },
+    { "id": 3, "name": "synthetic grass in square meters", "amount": 5, "cost": 35, "age": 38 },
+    { "id": 4, "name": "nails", "amount": 30, "cost": 0.10, "age": 0.15 }
   ],
   "projects": [
     { "id":  1, "name": "Garden Remodeling", "description":  "Change of grass for the garden", "duration": "2 dias" },
