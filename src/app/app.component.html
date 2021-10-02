@@ -1,12 +1,14 @@
 <mat-toolbar color="primary">
+  <img src="assets/images/tecontrato.png" width="65" height="65">
   <h1>Te Contrato</h1>
+
   <div class="mat-spacer"></div>
   <!-- App Options -->
   <a mat-button [routerLink]="'/home'">Home</a>
-  <a mat-button [routerLink]=" '/profile'">MyProfile</a>
+  <a mat-button [routerLink]=" '/About'">MyProfile</a>
   <a mat-button [routerLink]=" '/projects'">Projects</a>
   <a mat-button [routerLink]=" '/materials' ">Quotes</a>
-  <a mat-button [routerLink]=" '/about' ">About</a>
+  <a mat-button [routerLink]=" '/login' ">Log Out</a>
 
 </mat-toolbar>
 <router-outlet></router-outlet>

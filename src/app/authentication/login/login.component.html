@@ -1,0 +1,51 @@
+<div class="container-pt5">
+  <mat-card class="col-8 max-auto text-center">
+    <div style="text-align: center;">
+      <h1>TeContrato</h1>
+      <img src="assets/images/tecontrato.png">
+    </div>"
+    <mat-icon>logo</mat-icon>
+    <form [formGroup]="registerForm" (submit)="submitForm()">
+      <!--Email-->
+      <div style="text-align: center;">
+        <mat-form-field class="col-5 mb-2 mx-auto">
+          <mat-label>E-mail</mat-label>
+          <input type="text" matInput formControlName="email" placeholder="Ex. example@domain.com"/>
+          <mat-error *ngIf="registerForm.get('email')?.hasError('required')">
+            E-mail <strong>required</strong>
+          </mat-error>
+          <mat-error *ngIf="registerForm.get('email')?.hasError('email') &&
+          !registerForm.get('email')?.hasError('required')">
+            Please, enter a valid <strong>e-mail</strong>
+          </mat-error>
+
+        </mat-form-field>
+      </div>
+      <div style="text-align: center;">
+        <mat-form-field class="col-5 mat-3 mx-auto">
+          <mat-label>Password</mat-label>
+          <input type="password" matInput formControlName="password"/>
+          <mat-error *ngIf="registerForm.get('password')?.hasError('required')">
+            Password is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <br/>
+      <div style="text-align: center">
+        <div style="text-align: center">
+          <a class="mat-button" routerLink="src/app/home-page-contratista" routerLinkActive=""
+             mat-flat-button color = "primary" type ="submit" class="col-3 mt-2 mb-3" >LogIn
+          </a>
+        </div>
+      </div>
+      <br/>
+      <div style="text-align: center">
+        <a class="mat-button" routerLink="src/app/home-page-contratista" routerLinkActive=""
+           mat-flat-button color = "primary" type ="submit" class="col-3 mt-2 mb-3" >Register
+        </a>
+      </div>
+      <br/>
+    </form>
+  </mat-card>
+</div>
+<router-outlet></router-outlet>
